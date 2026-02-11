@@ -16,8 +16,8 @@ public class Main {
 
         ShoppingCart cart = new ShoppingCart(food);
 
-        System.out.println("Общая сумма товаров без скидки: " + cart.getTotalPrice());
-        System.out.println("Общая сумма товаров со скидкой: " + cart.getTotalPricewithDiscount());
-        System.out.println("Общая сумма вегетерианских продуктов без скидки: " + cart.getTotalPriceVegetarian());
+        System.out.printf("Общая сумма товаров без скидки: %.2f", cart.getTotalPrice());
+        System.out.printf("Общая сумма товаров со скидкой: %.2f", cart.getTotalPricewithDiscount());
+        System.out.printf("Общая сумма вегетерианских продуктов без скидки: %.2f", cart.getTotalPriceVegetarian());
     }
 }
